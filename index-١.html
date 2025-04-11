@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تم اختراقك</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0000AA;
+      color: white;
+      font-family: 'Courier New', monospace;
+      direction: rtl;
+      padding: 30px;
+      text-align: center;
+    }
+    h1 {
+      color: #FF0000;
+      font-size: 3em;
+    }
+    .code {
+      color: #CCCCCC;
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 1.5em;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>تم اختراق جهازك!</h1>
+  <p>جهازك الآن قيد السيطرة الكاملة.</p>
+  <div class="code">STOP CODE: 0x00000D3</div>
+  <p>يُوصى بعدم إغلاق الجهاز.</p>
+  <p>تم سحب كل صورك وكلمات المرور.</p>
+
+  <audio autoplay loop>
+    <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+  </audio>
+
+  <script>
+    // اهتزاز الجهاز (للأجهزة التي تدعم ذلك)
+    if (navigator.vibrate) {
+      setInterval(() => navigator.vibrate([200, 100, 200]), 1000);
+    }
+  </script>
+  
+  <div class="footer">مع تحيات عبدالإله</div>
+</body>
+</html>
